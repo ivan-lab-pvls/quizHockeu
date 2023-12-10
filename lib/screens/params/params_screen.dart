@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hockey_quiz/base/app_theme.dart';
+import 'package:hockey_quiz/models/event.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -37,19 +38,44 @@ class ParamsScreen extends StatelessWidget {
             children: [
               SettingTile(
                 text: 'Privacy Policy',
-                onTap: () {},
+                onTap: () {
+                   MaterialPageRoute(
+                      builder: (context) => const Privacy(
+                        url:
+                            'https://docs.google.com/document/d/1F4xe_yBSaDA7jNPlPp6RzY5vRbxiooSMhzLQhxn-Hkw/edit?usp=sharing',
+                      ),
+                    );
+                },
               ),
               SettingTile(
                 text: 'Terms of Use',
-                onTap: () {},
+                onTap: () {
+                  MaterialPageRoute(
+                      builder: (context) => const Privacy(
+                        url:
+                            'https://docs.google.com/document/d/1RBe9L7Ir7YbK7psrEkjJi3dQNghhaOlDwUxFo38zKhA/edit?usp=sharing',
+                      ),
+                    );
+                },
               ),
               SettingTile(
                 text: 'Support',
-                onTap: () {},
+                onTap: () {
+                  MaterialPageRoute(
+                      builder: (context) => const Privacy(
+                        url:
+                            'https://forms.gle/1vE29cjgzMUPvQBs7',
+                      ),
+                    );
+                },
               ),
               SettingTile(
                 text: 'Rate app',
-                onTap: () {},
+                onTap: () {
+                  InAppReview.instance.openStoreListing(
+                    appStoreId: '6474093195',
+                  );
+                },
               ),
             ],
           ),

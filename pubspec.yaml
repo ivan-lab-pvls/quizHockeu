@@ -1,0 +1,48 @@
+name: hockey_quiz
+description: A new Flutter project.
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  in_app_review: ^2.0.6
+  flutter_svg: ^2.0.9
+  intl: ^0.18.1
+
+  
+  firebase_analytics: ^10.6.3
+  firebase_messaging: ^14.2.2
+  firebase_core: ^2.21.0
+  firebase_remote_config: ^4.3.3
+  flutter_local_notifications: ^9.8.0+1
+  overlay_support: ^2.1.0
+  flutter_inappwebview: ^5.7.2+3
+  http:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  
+  uses-material-design: true
+
+
+  assets:
+    - images/
+    

@@ -26,7 +26,7 @@ class Privacy extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        backgroundColor: const Color.fromARGB(255, 60, 0, 255),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
